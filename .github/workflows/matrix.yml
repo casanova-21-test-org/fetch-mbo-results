@@ -2,7 +2,7 @@ name: Matrix
 
 on:
   workflow_dispatch:
-	
+
 jobs:
   run-matrix:
     strategy:
@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: simple
         run: |
-	  echo "Hello from "${{ matrix.version }}""
+          echo "Hello from "${{ matrix.version }}""
