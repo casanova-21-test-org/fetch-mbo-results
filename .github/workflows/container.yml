@@ -3,7 +3,7 @@ on: workflow_dispatch
 
 jobs:
   node-docker:
-    runs-on: casanova-21
+    runs-on: arc-runner-set
     container:
       image: casanova21/ubuntu-docker:latest
     steps:
