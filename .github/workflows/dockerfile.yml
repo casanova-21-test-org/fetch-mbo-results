@@ -6,9 +6,9 @@ jobs:
   build_image:
     runs_on: ubuntu_latest
     steps:
-      - name: check out repository
-        uses: actions/checkout@v2
-      - name: build project
-        container:
-          image: "Dockerfile"
+    - name: check out repository
+      uses: actions/checkout@v2
+    - name: build project
+      container:
+        image: "Dockerfile"
         run: echo hello world
