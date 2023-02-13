@@ -1,0 +1,15 @@
+# action.yml
+name: 'Hello World'
+description: 'Greet someone and record the time'
+on: workflow_dispatch
+
+jobs:
+  build_image:
+	  runs_on: ubuntu_latest
+		steps:
+		  - name: check out repository
+        uses: actions/checkout@v2
+      - name: build project
+        container:
+          image: "Dockerfile"
+        run: echo hello world
