@@ -1,5 +1,5 @@
 # action.yml
-name: 'Hello World'
+name: 'test'
 on: workflow_dispatch
 
 jobs:
@@ -8,7 +8,5 @@ jobs:
     steps:
     - name: check out repository
       uses: actions/checkout@v2
-    - name: build project
-      container:
-        image: "Dockerfile"
-        run: echo hello world
+    - name: test
+      run: echo hello
