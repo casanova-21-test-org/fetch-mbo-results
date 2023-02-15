@@ -7,7 +7,7 @@ jobs:
   run-matrix:
     strategy:
         matrix:
-          os: [arc-runner-set-mark-castillo]
+          os: [arc-runner-set]
           version: [1,2,3,4,5,6,7,8,9,10]
     runs-on: ${{ matrix.os }}
     steps:
