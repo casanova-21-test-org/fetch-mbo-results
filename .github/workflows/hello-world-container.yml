@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: dc1
+    runs-on: arc-runners
     container:
       image: ubuntu
     steps:
