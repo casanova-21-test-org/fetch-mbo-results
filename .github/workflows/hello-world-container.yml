@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: arc-runners
+    runs-on: arc-runner-scaleset-1
     container:
       image: ubuntu
     steps:
