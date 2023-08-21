@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: arc-runners
+    runs-on: meta-runner
     container:
       image: ubuntu
     steps:
