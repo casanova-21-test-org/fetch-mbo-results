@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: kp-runners
+    runs-on: ubuntu-latest
     container:
       image: ubuntu
     steps:
