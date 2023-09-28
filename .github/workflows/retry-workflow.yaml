@@ -25,7 +25,7 @@ jobs:
       job_id:  ${{ steps.jobs.outputs.job_id }}
   retry:
     needs: regression-gpu
-    runs-on: [self-hosted, regression-test-gpu]
+    runs-on: [ubuntu-latest]
     if: always() && (needs.regression-gpu.result != 'success')
     steps:
       - run: echo "hi"
