@@ -2,6 +2,7 @@ name: Run Regression Tests on GPU
 
 on:
   workflow_dispatch:
+  
 jobs:
   regression-gpu:
     # creates workflows for CUDA 11.6 & CUDA 11.7 on ubuntu
