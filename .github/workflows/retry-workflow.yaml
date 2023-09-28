@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   
 jobs:
-  regression-gpu:
+  regression-gpu2:
     # creates workflows for CUDA 11.6 & CUDA 11.7 on ubuntu
     runs-on: [ubuntu-latest]
     steps:
@@ -30,7 +30,7 @@ jobs:
     steps:
       - run: echo "hi"
       - run: echo ${{ needs.regression-gpu.outputs.job_id }}
-      - name: Re-run on failure
+      - name: Re-run on failure2
         if: always()
         #if: ${{ always() && contains(needs.*.result, 'failure') }}
         run: |
