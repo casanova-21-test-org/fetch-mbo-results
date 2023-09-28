@@ -16,7 +16,6 @@ jobs:
           job_name: "${{ github.job }}"  # if job.<job-id>.name is not specified, this works too
       - name: Output Current Job Log URL
         run: echo ${{ steps.jobs.outputs.job_id }}
-      - run: https://api.github.com/repos/${{ github.repository_owner }}/${GITHUB_REPOSITORY#*/}/actions/jobs/${{ github.run_id }}/rerun
       - name: Fail
         run: |
           echo "Executing a failing command"
