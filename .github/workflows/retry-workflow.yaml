@@ -24,7 +24,7 @@ jobs:
     outputs:
       job_id:  ${{ steps.jobs.outputs.job_id }}
   retry:
-    needs: regression-gpu
+    needs: regression-gpu2
     runs-on: [ubuntu-latest]
     if: always() && (needs.regression-gpu.result != 'success')
     steps:
