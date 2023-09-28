@@ -27,6 +27,7 @@ jobs:
     runs-on: [ubuntu-latest]
     if: always() && (needs.regression-gpu2.result != 'success')
     steps:
+      - run: sleep 30
       - run: echo "hi"
       - run: echo ${{ needs.regression-gpu2.outputs.job_id }}
       - name: Re-run on failure2
