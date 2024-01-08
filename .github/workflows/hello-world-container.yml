@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: tanium-runners
+    runs-on: everest-runners
     container:
       image: ubuntu
     steps:
