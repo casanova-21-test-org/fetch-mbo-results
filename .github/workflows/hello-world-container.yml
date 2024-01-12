@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: everest-runners
+    runs-on: ubuntu-latest
     container:
       image: ubuntu
     steps:
