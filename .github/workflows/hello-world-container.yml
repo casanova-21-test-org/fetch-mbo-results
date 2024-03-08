@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: everest-runners
+    runs-on: casanova-21-hosted-runners-private-networking
     container:
       image: ubuntu
     steps:
