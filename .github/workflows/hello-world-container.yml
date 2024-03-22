@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: casanova-21-pn-runner
+    runs-on: csa-demo-test-runner
     container:
       image: ubuntu
     steps:
