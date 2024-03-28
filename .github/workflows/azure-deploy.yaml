@@ -19,4 +19,4 @@ jobs:
       with:
         azcliversion: latest
         inlineScript: |
-          az account show
+          az vm create --resource-group casanova-21-rg --name casanova-21-vm --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
