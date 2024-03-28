@@ -7,7 +7,7 @@ name: Azure VM Deploy
 jobs:
 
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: casanova-21-runner
     steps:
     
     - uses: azure/login@v2
