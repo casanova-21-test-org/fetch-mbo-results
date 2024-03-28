@@ -19,4 +19,5 @@ jobs:
       with:
         azcliversion: latest
         inlineScript: |
-          az vm create --resource-group casanova-21-rg --name casanova-21-vm --image Ubuntu2204 --admin-username azureuser --generate-ssh-keys
+          az group create --name casanova-21-vm-rg --location eastus
+          az vm create --resource-group casanova-21-vm-rg --name casanova-21-vm --image Ubuntu2204 --admin-username azureuser --generate-ssh-keys
