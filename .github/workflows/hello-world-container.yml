@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: casanova-21-private-networking-runner
+    runs-on: wellsfargo-runner
     container:
       image: ubuntu
     steps:
