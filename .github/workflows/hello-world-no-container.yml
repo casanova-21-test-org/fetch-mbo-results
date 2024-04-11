@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: kp-runners
+    runs-on: wellsfargo-runner
     steps:
       - uses: actions/checkout@v2
       - name: Run a one-line script
