@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "JFrog Xray",
+          "rules": [
+            {
+              "id": "CWE-94",
+              "shortDescription": {
+                "text": "Improper Control of Generation of Code ('Code Injection')"
+              },
+              "helpUri": "https://pkg.go.dev/vuln/GO-2023-1703",
+              "properties" : {
+                "category" : "Code Injection",
+                "security-severity": 9.8
+              },
+              "messageStrings": {
+                "default": {
+                  "text": "Missing delimiter escaping in Go html/template leads to JavaScript code injection when using Go template actions inside JavaScript template literals."
+                }
+              }
+            }
+          ],
+          "informationUri": "https://jfrog.com/xray/",
+          "version": "3.92.7"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CWE-94",
+          "message": {
+            "text": "Result text. This result does not have a rule associated."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "https://soleng.jfrog.io/ui/repos/tree/General/default-docker-local/requests-report/v0.0.15/manifest.json"
+                },
+                "region": {
+                  "byteOffset": 0,
+                  "byteLength": 0
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
