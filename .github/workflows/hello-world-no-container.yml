@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: dependabot
+    runs-on: Wells-Fargo-Private-Networking-Runner
     steps:
       - uses: actions/checkout@v2
       - name: Run a one-line script
