@@ -1,0 +1,12 @@
+name: ci
+on:
+  pull_request:
+    paths:
+      - 'scripts/**'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Hello world
+    - run: echo "Hello world"
